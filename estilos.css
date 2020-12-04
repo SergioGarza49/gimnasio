@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    
+
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+nav ul{
+float: right;
+margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+background: #1b9bff;
+transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+section{
+    background: url(img/3.jpg) no-repeat;
+    background-size: cover ;
+    height:  calc(100vh - 60px);
+}
+
+section h2{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: bold;
+    color: white;
+    font-family: verdana;
+}
+
+section article{
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 10px;
+    display: block;
+    font-size: 30px;
+    color: #ff8c66;
+    margin: auto;
+    
+}
+
+section article p{
+    text-align: justify;
+    font-weight: bold;
+    
+
+}
+
+.boton1{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    
+}
+
+.boton1:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+div.boton11{
+    width: 50%;
+    display: block;
+    float: right;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+
+div.boton111{
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.entrenamientos{
+    background: #F0F8FF;
+    height:  calc(300vh - 200px);
+    text-align: center;
+    
+}
+
+.entrenamientos h2{
+    font-size: 40px;
+}
+
+.entrenamientos h3{
+    padding: 10px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+.wrapper p{
+    color: black;
+    font-size: 20px;
+}
+
+.entrenamientos p{
+    margin: auto;
+}
+
+.calistenia{
+    background: #F0F8FF;
+    height:  calc(300vh - 200px);
+    text-align: center;
+}
+
+.formulario label{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+   
+}
+
+.formulario textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.formulario input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000000
+}
+
+.formulario input:focus, textarea:focus{
+    border: 1px solid #1668c4;
+    outline: transparent;
+}
+
+.formulario input[type="submit"]{
+    margin-bottom: 0px;
+    background: #1668c4;
+    color: #fff;
+    border: none;
+
+}
+
+.formulario input[type="submit"]:hover{
+    background: green;
+    cursor: pointer;
+}
+
+.formulario {
+    border-top:solid 1px grey;
+   
+}
+
+.footer{
+    background: black;
+    color: white;
+    
+}
+
+.footer p{
+    text-align: center;
+    padding-left: 50%;
+    padding-bottom: 10px;
+    
+    font-size: 30px;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+.entrenamientos{
+    background: #F0F8FF;
+    height:  calc(200vh - 100px);
+    text-align: center;
+    
+}
+.entrenamientos h2{
+    color: black;
+}
+
+.entrenamientos h3{
+    font-size: 50px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.entrenamientos p{
+    margin-top: 50px ;
+    text-align: justify;
+}
+
+.crossfit img{
+    display: block;
+    float: left;
+    margin-top: 20px;
+
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+
+    }
+
+    #check:checked  ~ ul{
+        left: 0;
+    }
+}
